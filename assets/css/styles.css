@@ -41,4 +41,11 @@ body{background-color: silver;}
 .card > .back{
 	word-wrap: break-word;
 }
-/*  */
+/* Responsividad */
+
+@media only screen and (max-width:600px){} /*xs phones*/
+@media only screen and (min-width:600px){} /*phones*/
+@media only screen and (min-width:768px){} /*tablets*/
+@media only screen and (min-width:992px){} /*laptops y desktops*/
+@media only screen and (min-width:1200px){} /*laptops grandes y desktops*/
+/* */
