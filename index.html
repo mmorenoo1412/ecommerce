@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
-    <Header>Nombre Tienda</Header>
+    <Header>Cubresuelos</Header>
    <!-- Nav Bar-->
     <div>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -21,14 +21,19 @@
         aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand" href="#">Logo</a>
+  <a class="navbar-brand" href="./index.html">Logo</a>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item active">
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Carrito</a>
+        <a class="nav-link" href="./cart.html">
+        <div class="cart">
+        🛒
+      <span id="cart-count" class="cart-count">0</span>
+        </a>    
+    </div>
       </li>
      <!-- <li class="nav-item">
         <a class="nav-link disabled" href="#">Disabled</a>
@@ -62,9 +67,11 @@
     <p>Exposición: Pleno sol.</p>
     <p>Resistencia: Resiste hasta -7°C.</p>
     <p>Precio:$3.500</p>
-    <button type="button" class="btn btn-secondary">+</button>
-    <button type="button" class="btn btn-secondary">-</button>
-    <button type="button" class="btn btn-primary">Detalles</button>
+    <button type="button" class="btn btn-success add-btn" id="btn+1">+</button>
+    <button type="button" class="btn btn-secondary ms-btn" id="btn-1">-</button>
+    <a href="./lavanda.html">
+    <button type="button" class="btn btn-primary dts-btn" id="details1">Detalles</button>
+    </a>
     </div>
 </div>
 <!--Tarjeta 2-->
@@ -84,10 +91,12 @@
     <p>Exposición: Sol y sombra.</p>
     <p>Resistencia a heladas: Si.</p>
     <p>Precio:$750</p>
-    <button type="button" class="btn btn-secondary">+</button>
-    <button type="button" class="btn btn-secondary">-</button>
-    <button type="button" class="btn btn-primary">Detalles</button>
-    </div>
+    <button type="button" class="btn btn-success add-btn" id="btn+2">+</button>
+    <button type="button" class="btn btn-secondary ms-btn" id="btn-2">-</button>
+    <a href="./falkia.html">
+    <button type="button" class="btn btn-primary dts-btn" id="details2">Detalles</button>
+    </a>
+</div>
 </div>
 <!--Tarjeta 3-->
     <div class="card-grid" style="perspective: 200px;position: 
@@ -96,7 +105,7 @@
         transform-style: preserve-3d; position: absolute; z-index: 1; 
         height: 100%; width: 100%; transition: 
         0.5s ease-out; transform: rotateY(0deg);">
-        <img src="./assets/img/agujamorada.png" width="230px" height="281px" alt="">Aguja Morada</div>
+        <img src="./assets/img/agujamorada.png" width="230px" height="281px" alt="error">Aguja Morada</div>
     <div class="back" style="backface-visibility: hidden; transform-style: 
         preserve-3d; position: relative; z-index: 0; height: 100%; width: 100%; 
         transform: rotateY(-180deg); transition: 0.5s ease-out;">
@@ -106,9 +115,11 @@
         <p>Exposición:Sombra/semisombra.</p>
         <p>Altura: 20cm aprox.</p>
         <p>Precio: $600</p>
-        <button type="button" class="btn btn-secondary">+</button>
-        <button type="button" class="btn btn-secondary">-</button>
-        <button type="button" class="btn btn-primary">Detalles</button>
+        <button type="button" class="btn btn-success add-btn" id="btn+3">+</button>
+        <button type="button" class="btn btn-secondary ms-btn" id="btn-3">-</button>
+        <a href="./agujamorada.html">
+        <button type="button" class="btn btn-primary dts-btn" id="details3">Detalles</button>
+    </a>
     </div>
 </div>
 
@@ -116,9 +127,9 @@
 
 
 <Footer>
-    <h1>Nombre Tienda</h1>
-    <p>Datos de contacto</p>
-    <p>Direccion</p>
+    <h1>Cubresuelos</h1>
+    <p>Datos de contacto: +569999999 +56999999</p>
+    <p>Direccion: Calle 1234 1234</p>
 </Footer>
 <!--Bootstrap  //  pluggins-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
